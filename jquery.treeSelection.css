@@ -1,0 +1,77 @@
+.treeSelection {
+    position: absolute;
+    background-color: #fff;
+    overflow: auto;
+    height: auto;
+    max-height: 350px;
+}
+
+.treeSelection label {
+    cursor: default;
+}
+
+.treeSelection .no-sign {
+    list-style-type: none;
+}
+
+.treeSelector {
+    height: 46px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.treeSelector b {
+    font-weight: normal;
+    display: inline-block;
+    border: 1px #999 solid;
+    background-color: #ddd;
+    padding-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.treeSelector b span {
+    font-size: 12px;
+    background-color: #bbb;
+    margin-left: 5px;
+    border-left: 1px #999 solid;
+    padding: 6px 5px;
+    color: #333
+}
+
+.treeSelector b span:hover {
+    color: #fff;
+}
+
+.treeSelector b:hover {
+    background-color: #eee;
+}
+
+.treeSelection.border ul {
+    list-style: none;
+}
+
+.treeSelection.border ul ul {
+    display: none;
+}
+
+.treeSelection.border span.preIcon.arrowDown.arrowRotate {
+    transform: rotate(-90deg);
+}
+
+.treeSelection.border span.preIcon.arrowDown {
+    cursor: pointer;
+    background: url("arrowdown-black.svg");
+    transition: transform 0.3s ease-out;
+}
+
+.treeSelection.border span.preIcon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    margin: 0px 4px;
+    background-size: 14px 14px !important;
+    background-repeat: no-repeat !important;
+}
